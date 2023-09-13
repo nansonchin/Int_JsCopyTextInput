@@ -1,0 +1,21 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width",inital-scale="1.0">
+        <meta http-equiv ="X-UA-Compatible" content="ie=edge">
+        <title> TEST Node JS WEB SERVER</title>
+    </head>
+    <body>
+        Hi, This page is just used for test Node JS WEB SERVER
+        <br>
+        <label>Name A</label><input type="text" name="original" id="original"/>
+        <label>Name B</label><input type="text" name="copy" id="copy"/>
+    </body>
+    <script>
+        let original=document.getElementById('original');
+        let copy=document.getElementById('copy');
+        original.addEventListener("input",function(){
+            copy.value=original.value;
+        });
+    </script>
+</html>
